@@ -1,4 +1,4 @@
-
+""" code to take a look at the data """
 # coding: utf-8
 
 import sys
@@ -6,10 +6,9 @@ import numpy
 import matplotlib.pyplot
 
 
-def analyse (filename, outfile=None):
+def analyse(filename, outfile=None):
+    """This function loads a file and plots the average, maximum, and minimum across columns"""
     data = numpy.loadtxt(fname = filename, delimiter = ',')
-    """This function loads a file and plots the average, maximum, and minimum across columns
-    """
     # create a wide figure to hold the subplots
     fig = matplotlib.pyplot.figure (figsize =(10.0, 3.0))
     
